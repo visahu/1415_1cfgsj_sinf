@@ -14,7 +14,7 @@ ls -1 $1/*.jpg > imagefiles
 while read imgfile 
 do
 	lengthname=${#imgfile}
-	namefile=${imgfile;0;$lengthname-4}
+	namefile=${imgfile:0:$lengthname-4}
 	convert $imgfile -resize 200x200 $namefile.png	
 
 done < imagefiles
