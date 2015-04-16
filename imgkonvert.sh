@@ -2,7 +2,7 @@
 # Hola cocacola
 
 # Script to convert all mage files from a directory (parameter) into png format file
-# it also reduces size
+# it also reduces sizej
 
 # Sanity checks ?
 # ...
