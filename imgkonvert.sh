@@ -9,7 +9,7 @@
 
 # Main code
 
-ls -1 $1*.jpg > imagefiles
+ls -1 $1/*.jpg > imagefiles
 
 while read imgfile 
 do
