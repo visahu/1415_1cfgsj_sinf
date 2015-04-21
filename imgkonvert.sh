@@ -15,7 +15,9 @@ do
 	lengthname=${#imgfile}
 	namefile=${imgfile;0;$lengthname-4}
 	convert $imgfile -resize 200x200 $namefile.png	
+	$ convert -rotate 90 input.jpg output.jpg
+	$ convert -font helvetica -fill white -pointsize 36 -draw ‘text 10,50 “pretty kitties…” imagen.jpg imagencomentada.jpg
 
-done < imagefiles
+done < imagefile
 rm imagefiles
 exit 0
