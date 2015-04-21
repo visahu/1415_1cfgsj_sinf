@@ -20,6 +20,7 @@ do
 	convert $imgfile -rotate 90 "$namefile".jpg
 	convert $imgfile -font helvetica -fill white -pointsize 36 -draw ‘text 10,50 “pretty babies…”"$namefile".gif
 	convert $imgfile.png -colorspace Gray "$namefile".png
+	for i in *.JPG; do convert -verbose $i $i.gif; done
 
 done < imagefiles
 rm imagefiles
