@@ -21,3 +21,4 @@ do
 done < imagefile
 rm imagefiles
 exit 0
+ 
