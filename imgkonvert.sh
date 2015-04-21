@@ -18,7 +18,7 @@ do
 	namefile=${imgfile;0;$lengthname-4}
 	echo "namefile: $namefile"
 	convert $imgfile -resize 200x200 $namefile.png	
-	convert $imgfile -rotate 90 $namefile.png
+	convert $imgfile -rotate 180 $namefile.png
 	convert $imgfile -font helvetica -fill white -pointsize 36 -draw ‘text 10,50 “pretty kitties…”$namefile.gif
 
 done < imagefiles
