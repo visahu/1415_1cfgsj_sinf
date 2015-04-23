@@ -5,7 +5,7 @@
 #editado
 # Sanity checks ?
 # ...
-
+#A ver si a la tercera
 # Main code
 
 ls -1 $1/*.jpg > imagefiles
