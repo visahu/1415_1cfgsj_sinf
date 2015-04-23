@@ -13,15 +13,15 @@ cat imagefiles
 
 while read imgfile 
 do
-	echo "IMG file: $simgfile"
+	echo "IMG file: $imgfile"
 	lengthname=${#imgfile}
 	echo "length: $lengthname"
 	namefile=${imgfile:0:$lengthname-4}
 	echo "namefile: $namefile"
-	convert $imgfile -resize 200x200 $namefile.png	
-	convert $imgfile-rotate 90 “$namefile”.jpg
-	convert $imgfile -font helvetia -fill white -pointsize 36 -draw text 10,50 "pretty babies...""$namefile".gif
-	convert $imgfile.png -colorspace Gray "$namefile".png
+	convert $imgfile -resize 200x200 "$namefile.png"	
+	convert  -rotate 90 $imgfile $namefile"_rotate.gif"
+	#echo $imgfile $namefile"_sepia.jpg"
+	convert  -sepia-tone 90% $imgfile $namefile"_sepia.bmp"
 	
 
 
