@@ -17,8 +17,9 @@ do
 	echo "Lenght: $lengthname"
 	namefile=${imgfile:0:$lengthname-6}
 	echo "namefile: $namefile"
-	convert $imgfile -resize 200x200 $namefile.png	
-	convert $imgfile -rotate 90 $namefile.png
+
+	convert $imgfile -negate -blur 13x13 -resize 125x125 $namefile.png	
+
 
 done < imagefiles
 rm imagefiles
