@@ -21,7 +21,7 @@ do
 	convert $imgfile -resize 200x200 "$namefile.png"	
 	convert  -rotate 90 $imgfile $namefile"_rotate.gif"
 	#echo $imgfile $namefile"_sepia.jpg"
-	convert  -sepia-tone 90% $imgfile $namefile"_sepia.bmp"
+	convert  -sepia-tone 90% $imgfile $namefile"_sepia.jpg"
 	
 
 
